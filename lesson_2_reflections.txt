@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+A hidden .git folder is created to keep track of changes
+You need to do it to be able to take snapshots of your directory contents each time you make a commit
+Repository enables you to log changes to files within the directory and checkout previous versions of the directory contents at the time of each commit
+

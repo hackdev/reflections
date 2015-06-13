@@ -1,0 +1,103 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+viewing a diff helped limit the search significantly, since only changes had to be reviewed.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+You would be able to undo mistakes you made
+You would be more open to making drastic changes, knowing that you could always revert to the previous working version
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+pro: each commit has a clear logical purpose
+con: if you forget to commit your code might get lost
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Git is designed with code in mind, when a project may involve multiple files
+Others treat each documents separately, assuming the files are not dependent.
+
+How can you use the commands git log and git diff to view the history of files?
+git log  # lists all commits along with description
+git diff [first id] [second id] shows the changes between the two commits, so that it is easy to see which lines have been added or deleted
+
+How might using version control make you more confident to make changes that could break something?
+You will no longer be worried, since you could always revert to a previous version.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+All remaining class projects and personal projects
+
+
+Notes on command line:
+pwd # print working directory - shows what directory you are in
+ls # list the files in this directory
+
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt
+git --version # checks git version
+
+Choosing when to commit is a judgement call, and it's not always cut-and-dried. When choosing whether to commit, just keep in mind that each commit should have one clear, logical purpose, and you should never do too much work without committing.
+
+comparing files
+
+$git diff [first id] [second id]
+
+
+copying entire repository
+
+git clone [followed by a URL to the repository]
+
+fa4c6bade4970c282b3870ad16f1bde8164663a9
+
+
+To get colored diff output, run
+
+git config --global color.ui auto
+
+
+show a list of the recent commits with information about them, including commit IDs
+
+git log
+
+git diff followed by two commit IDs will compare the two versions of the code in those commits
+
+you may enter the first four or more characters of the commit ID rather than pasting the entire ID
+
+git checkout
+resets all files to how they were at the time the commit was made
+
+
+Git command review
+
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff will do this. It takes two arguments - the two commit ids to compare.
+
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone will do this. It takes one argument - the url of the repository to copy.
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout will do this. It takes one argument - the commit ID to restore.
+
+
+Show the commits made in this repository, starting with the most recent.
+
+git log will do this. It doesn't take any arguments.
+
+
+scp command lets you securely copy a directory from one computer to another
+
+----------Lesson 2------------
+
+ls -a #shows hidden files too
+
+to make a git repository in existing directory:
+1. ls -a #to list current contents
+2. git init # initializes/reates new git repository
+3. if you run ls -a again you will see that a .git directory has been created
+4. git status # shows which files have changed since the last commit
+5. git add #to add files to the staging area
