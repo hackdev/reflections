@@ -10,3 +10,12 @@ It is different from the working directory in that you do not have to include en
 It is different from the repository in that it defines what will be included in the commit
 Staging area allows you to single out certain file(s) for inclusion into commit
 
+How can you use the staging area to make sure you have one commit per logical change?
+You can use git diff to see the changes between working directory and staging area
+You can use git diff --staged to show the changes between staging area and the most recent commit
+You can use git reset --hard  to discard any changes in the working directory and the staging area
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches would be helpful when creating several versions of the project or experimenting with changes while still wanting to have a working demo.
+Branches allow developing the application several ways and still having the option to switch between versions.
