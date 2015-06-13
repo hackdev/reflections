@@ -91,6 +91,8 @@ git log will do this. It doesn't take any arguments.
 
 scp command lets you securely copy a directory from one computer to another
 
+git config --global core.editor "'c:/<path to sublime>/sublime_text.exe' -w $*"
+
 ----------Lesson 2------------
 
 ls -a #shows hidden files too
@@ -101,3 +103,4 @@ to make a git repository in existing directory:
 3. if you run ls -a again you will see that a .git directory has been created
 4. git status # shows which files have changed since the last commit
 5. git add #to add files to the staging area
+6. git commit #opens text editor to write commit message; standard practice is to write it like a command, e.g. add a cake recipe

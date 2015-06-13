@@ -4,3 +4,9 @@ A hidden .git folder is created to keep track of changes
 You need to do it to be able to take snapshots of your directory contents each time you make a commit
 Repository enables you to log changes to files within the directory and checkout previous versions of the directory contents at the time of each commit
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+It is different from the working directory in that you do not have to include entire working directory
+It is different from the repository in that it defines what will be included in the commit
+Staging area allows you to single out certain file(s) for inclusion into commit
+
