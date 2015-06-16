@@ -134,3 +134,27 @@ git show [commit id] #shows what changes were made by the commit compared to its
 Adding master to easy-mode branch
 1. checkout easy-mode branch
 2 run git merge master easy-mode
+
+----------Lesson 3------------
+Adding a remote
+1. create a repository on github
+ log into github accout
+ press plus icon next to username
+ select new repository
+ name the repository ("reflections")
+ leave as public
+ you don't want to initialize the repository with a README because you already have files in your repository (otherwise a good idea, because then the repository will start out with one commit in it and you cannot clone a repository with zero commits)
+
+2. add the repository on github as a remote to the repository on your computer
+ git remote # to view and create remotes (run with no arguments to see existing remotes)
+ git remote add # to add a github repository as remote (need to add a name; if you only have one remote, the standard practice is to name it "origin")
+ then we need to add the URL of the remote, copy if from github
+ git remote add origin URL-goes-here
+ now if you run git remote again you will see that origin remote has been created
+ to verify that the URL was added correctly, run git remote -v (v is for verbose)
+ it will show URLs for fetch and push, often they will be the same URL
+
+3. send changes to the remote
+ git push takes two arguments, the remote you want to send changes to and the name of the local branch that you want to push
+ git push origin master
+ refresh page on github to confirm that all your files have been added
