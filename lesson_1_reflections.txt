@@ -104,3 +104,33 @@ to make a git repository in existing directory:
 4. git status # shows which files have changed since the last commit
 5. git add #to add files to the staging area
 6. git commit #opens text editor to write commit message; standard practice is to write it like a command, e.g. add a cake recipe
+
+git diff # with no arguments will show the changes you have made in the working directory that you have not added to the staging area yet
+git diff --staged # will show the changes between staging area and the most recent commit
+git reset --hard #will discard any changes in either the working directory or the staging area - if you run this command you cannot get those changes back
+git checkout master # fixes detached HEAD state
+
+Branches
+git branch #shows current branches
+git brach easy-mode # when you give an argument a new branch is created with that name
+* next to brach name means that that brach is currently checked out
+git checkout easy-mode #switches active branch to easy-mode branch
+
+git log --graph --oneline master coins
+git checkout -b new_branch_name # equivalent of running two commands-- git branch new_branch_name and git checkout new_branch_name
+
+Merging Branches
+1. verify and checkout the right branch
+git branch
+git checkout master
+
+2. git merge master coins #creates merged version of the two branches
+
+3. git brach -d coins #deletes the brach label coins (commits are retained)
+
+
+git show [commit id] #shows what changes were made by the commit compared to its parent
+
+Adding master to easy-mode branch
+1. checkout easy-mode branch
+2 run git merge master easy-mode
