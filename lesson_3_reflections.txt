@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+You would want to use a remote repository to have a cloud-based workspace reachable from anywhere even when you do not have access to your development machine.
+You would want a remote repository as a backup to your local repository.
+You would also want to use a remote repository when working on a group project or to make it easy to share your work with others.
