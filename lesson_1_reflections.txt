@@ -158,3 +158,10 @@ Adding a remote
  git push takes two arguments, the remote you want to send changes to and the name of the local branch that you want to push
  git push origin master
  refresh page on github to confirm that all your files have been added
+
+
+Pulling a commit to sync local version with remote version
+run git log to confirm that remote commit is not present int the local repository
+to get it run git pull, you need to specify the remote and the branch you want to pull
+git pull origin master
+
