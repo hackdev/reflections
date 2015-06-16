@@ -5,3 +5,8 @@ You would also want to use a remote repository when working on a group project o
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 To excercise control over what is pulled. This may not be as important when you are working alone, but with a group project you may wish to review the changes before making them.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Forks are clones that are local to GitHub-- GitHub makes a clone using its own computers, it also tracks the number of times a repository has been forked and links the forks to the original repository
+Clones are copies of repository including commit history. A forked repository needs to be cloned for use on local machine.
+Branches are versions of repository created to enable development of several versions simultaneously and allowing branching in different directions. Branches can be merged to incorporate features from one branch into another.
