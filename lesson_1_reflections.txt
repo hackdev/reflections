@@ -205,3 +205,23 @@ Making a Pull Request - allows proposing changes to original repository
 	git push origin different-oil
 
 4. on GitHub, click Compare & pull request
+
+
+Updating local repository so that there are no merge conflicts in pull request
+
+1. update local branch
+	git pull origin master
+
+alternatively, to examine the changes first, you can run git fetch first and then run git merge origin/master master
+
+2. git checkout different-oil
+   git merge master different-oil
+
+   as expected, this results in a conflict
+
+3. resolve conflict and commit the merge
+
+4. run git log to confirm that the brach has the changes
+
+
+
