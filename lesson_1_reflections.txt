@@ -188,3 +188,20 @@ you will see a remote called origin and a URL that points to your forked reposit
 If  you want someone to collaborate with you, you can give them permission to push to your repository
 Go to settings --> collaborators and add a github username [sara's is salogel42]
 
+git pull origin master is the same as git fetch origin and git merge master origin/master
+
+
+Making a Pull Request - allows proposing changes to original repository
+
+1. create a new branch
+	git branch different-oil
+
+2. commit changes to new branch
+	git checkout different-oil
+	git add cake-recipe.txt
+	git commit
+
+3. push new branch to GitHub
+	git push origin different-oil
+
+4. on GitHub, click Compare & pull request
